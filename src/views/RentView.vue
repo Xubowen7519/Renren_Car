@@ -213,7 +213,7 @@ body {
   justify-content: center;
   margin-top: 11vw;
   color: rgb(255, 255, 255);
-  font-size: 1vw;
+  font-size: 1.6rem;
 }
 
 .group2 {
@@ -265,7 +265,7 @@ body {
 
 .group2-3 {
   margin-left: 5vw;
-  font-size: 1vw;
+  font-size: 1.2rem;
 }
 
 .group2-4 {
@@ -279,8 +279,8 @@ body {
   background-color: #dbf0ff;
   color: #5397ff;
   width: 36vw;
-  height: 4.8vw;
-  font-size: x-small;
+  height: 3.8vw;
+  font-size: 1.3rem;
   text-align: center;
   margin: 1.3vw 0px 0px 11px;
   border-radius: 3vw;
@@ -298,7 +298,7 @@ body {
 .group2-6 {
   display: flex;
   margin-left: 18vw;
-  font-size: 1vw;
+  font-size: 1rem;
 }
 
 .group2-7 {
@@ -342,7 +342,7 @@ body {
   height: 19vw;
   display: flex;
   align-items: center;
-  margin-left: 4vw;
+  margin-left: 6vw;
   margin-top: 3vw;
 }
 
@@ -357,19 +357,19 @@ body {
 }
 
 .group2-15 {
-  font-size: 4vw;
+  font-size: 1.7rem;
   font-weight: bold;
 }
 
 .group2-16 {
-  font-size: 1vw;
+  font-size: 1rem;
 }
 
 .group2-17 {
   margin-left: -2vw;
-  margin-bottom: -2vw;
+  margin-bottom: 0vw;
   margin-top: 0vw;
-  font-size: 3vw;
+  font-size: 1.4rem;
 }
 
 .group2-12 img {
@@ -403,19 +403,21 @@ body {
   text-align: center;
   margin-top: 1.8vw;
   color: #ffffff;
+  font-size: 1.8rem;
 }
 
 .group4-1 {
   font-weight: bold;
   display: flex;
   margin-left: 4vw;
-  font-size:4vw ;
+  font-size: 1.8rem;
+  width: 23vw;
 }
 
 .group4-2 {
   color: #6c6c6c;
-  margin-left: 57vw;
-  font-size: 3vw;
+  margin-left: 50vw;
+  font-size: 1.8rem;
   margin-top: 0.4vw;
 }
 
@@ -428,13 +430,13 @@ body {
 }
 
 .group4 img {
-  margin-top: 1.6vw;
+  margin-top: 2.2vw;
   height: 2vw;
-  margin-left: 1vw;
+  margin-left: 2vw;
 }
 
 .group4-3 {
-  width: 61vw;
+  width: 51vw;
   height: 16vw;
   display: flex;
   align-items: center;
@@ -449,12 +451,12 @@ body {
 }
 
 .group4-5 {
-  font-size: 4vw;
+  font-size: 1.5rem;
 }
 
 .group4-6 {
   margin-top: 5vw;
-  font-size: 1vw;
+  font-size: 1rem;
   color: #898989;
 }
 
@@ -494,7 +496,7 @@ body {
 }
 
 .group4-10 {
-  font-size: 1vw;
+  font-size: 1rem;
   color: #898989;
   margin-top: 2.4vw;
   margin-left: 1vw;
@@ -502,7 +504,7 @@ body {
 
 .group4-11 {
   margin-top: 1.5vw;
-  margin-left: 31vw;
+  margin-left: 28.6vw;
   color: #ff7b7b;
 }
 
@@ -545,7 +547,7 @@ body {
   height: 3.2vw;
   overflow-wrap: break-word;
   color: rgba(30, 30, 30, 1);
-  font-size: 3.2vw;
+  font-size: 3.2rem;
   text-align: center;
   white-space: nowrap;
   line-height: 6.5333vw;
@@ -563,7 +565,7 @@ body {
   height: 3.2vw;
   overflow-wrap: break-word;
   color: rgba(30, 30, 30, 1);
-  font-size: 3.2vw;
+  font-size: 3.2rem;
   font-family: SourceHanSansCN-Regular;
   font-weight: bold;
   text-align: left;
@@ -586,12 +588,13 @@ body {
   line-height: 32px;
   overflow:hidden;
   font-weight: bold;
+  font-size: 1.7rem;
 }
 .SelectList1{
   position: relative;
   background-color: transparent;
   TOP:   -2px;
-  left:11px;
+  left: 30px;
   border-width: 0px;
   border-top-style: none;
   border-right-style: none;
@@ -602,13 +605,14 @@ body {
   line-height: 32px;
   overflow:hidden;
   font-weight: bold;
+  font-size: 1.7rem;
 }
 .btn-on{
   width: 60px;
   height: 25px;
   margin: 0 3px;
   border-radius: 25px;
-  font-size: 14px;
+  font-size: 14rem;
 }
 .btn-on{
   cursor: pointer;

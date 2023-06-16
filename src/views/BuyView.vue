@@ -224,6 +224,7 @@ export default {
 .info{
   margin-top: 1.6vw;
   margin-left: 2.5vw;
+  width: 5vw;
 
 }
 /*搜索框*/
@@ -240,6 +241,7 @@ export default {
   width: 83.4667vw;
   height: 9.2vw;
   border-radius: 2.6667vw;
+  font-size: 1.6rem;
 }
 
 /*轮播图*/
@@ -958,6 +960,7 @@ button:active {
   height: 28px;
   width: 19vw;
   line-height: 20px;
+  font-size: 1.5rem;
 }
 .SelectList2
 {
@@ -974,5 +977,6 @@ button:active {
   height: 28px;
   width:  13vw;;
   line-height: 20px;
+  font-size: 1.5rem;
 }
 </style>
