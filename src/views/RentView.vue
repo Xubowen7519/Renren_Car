@@ -299,7 +299,7 @@ body {
   display: flex;
   margin-left: 18vw;
   font-size: 1rem;
-  transform: scale(1.8);
+  /*transform: scale(1.8);*/
 }
 
 .group2-7 {
