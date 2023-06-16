@@ -214,180 +214,179 @@ body {
 
 .img2-p1 {
   color: rgb(250, 250, 250);
-  margin-left: -4vw;
+  margin-left: -3vw;
   margin-top: -0.1333vw;
-  font-size: xx-small;
-  transform: scale(0.8);
+  font-size: 1.3rem;
+/*transform: scale(0.8);*/
 }
 
 .img2-p2 {
   color: rgb(250, 250, 250);
   margin-left: 64.3333vw;
-  margin-top: 7.1333vw;
-  font-size: xx-small;
+  margin-top: 5.1333vw;
+  font-size: 1.4rem;
 }
 
 .img3 {
-  width: 3.7333vw;
-  height: 4.1333vw;
-  margin: 0.8vw 0 0 2.5333vw;
+width: 3.7333vw;
+height: 4.1333vw;
+margin: 0.8vw 0 0 2.5333vw;
 }
 
 .group-2 {
-  background: url(../../assets/pages/Buy/cheliangxiangqing/background_frame2.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  border-radius: 2.6667vw;
-  height: 73.3333vw;
-  width: 93vw;
-  position: absolute;
-  left: 3.9333vw;
-  top: 59.3333vw;
+background: url(../../assets/pages/Buy/cheliangxiangqing/background_frame2.png);
+background-repeat: no-repeat;
+background-size: contain;
+border-radius: 2.6667vw;
+height: 73.3333vw;
+width: 93vw;
+position: absolute;
+left: 3.9333vw;
+top: 59.3333vw;
 }
 
 .group-3 {
-  overflow-wrap: break-word;
-  color: rgba(40, 40, 40, 1);
-  font-size: 3.6vw;
-  font-family: Adobe Heiti Std R;
-  font-weight: bold;
-  text-align: left;
-  white-space: nowrap;
-  line-height: 6.5333vw;
-  margin-left: 3.9vw;
-  margin-top: 5vw;
+overflow-wrap: break-word;
+color: rgba(40, 40, 40, 1);
+font-size: 3.6vw;
+font-family: Adobe Heiti Std R;
+font-weight: bold;
+text-align: left;
+white-space: nowrap;
+line-height: 6.5333vw;
+margin-left: 3.9vw;
+margin-top: 5vw;
 }
 
 .group4-1 {
   background-color: rgb(221, 221, 221);
-  width: 22vw;
-  height: 4.8vw;
-  font-size: x-small;
+  width: 18vw;
+  height: 3.8vw;
+  font-size: 1.3rem;
   text-align: center;
   margin-left: 2.5vw;
   margin-top: 2.3vw;
   border-radius: 3vw;
-  transform: scale(0.8);
 }
 
 .group4-2 {
   background-color: rgb(221, 221, 221);
-  width: 22vw;
-  height: 4.8vw;
-  font-size: x-small;
+  width: 18vw;
+  height: 3.8vw;
+  font-size: 1.3rem;
   text-align: center;
-  margin-left: 0vw;
+  margin-left: 2.5vw;
   margin-top: 2.3vw;
   border-radius: 3vw;
-  transform: scale(0.8);
 }
 
 .group-5 {
-  width: 89vw;
-  height: 20vw;
-  margin-left: 4vw;
-  margin-top: 7vw;
+width: 89vw;
+height: 20vw;
+margin-left: 4vw;
+margin-top: 7vw;
 }
 
 .group-6 {
-  color: #fd0000;
-  width: 16vw;
+color: #fd0000;
+width: 16vw;
 }
 
 .group-7 {
-  font-size: 1vw;
+  font-size: 1.5rem;
   margin-left: 26vw;
 }
 
 .group6-1 {
-  font-size: 1vw;
-  margin-top: 1vw
-}
-
-.group6-2 {
-  font-size: 5vw;
-  margin-top: -0.8vw;
-}
-
-.group7-1 {
-  margin-left: 4vw;
-}
-
-.group-8 {
-  border-top: 1.3vw solid rgb(227 230 233);
-  border-bottom: 0.5vw solid rgb(245 245 245);
-  margin-top: 90vw;
-  height: 9vw;
-}
-
-.files1 {
-  margin-left: 4vw;
-  font-weight: bold;
-  margin-top: 1.4vw;
-}
-
-.group-9 {
-  width: 100vw;
-  display: flex;
-}
-
-.group9-1 {
-  margin-top: 3vw;
-  margin-left: 4vw;
-}
-
-.group9-2 {
-  font-size: 1vw;
-}
-
-.group9-3 {
-  font-weight: bold;
-  margin-top: 2vw;
-  font-size: 4.5vw;
-}
-
-.group9-4 {
-  margin-top: 3vw;
-  margin-left: 15vw;
-}
-
-.group-10 {
+  font-size: 1.4rem;
   margin-top: 1vw;
 }
 
+.group6-2 {
+font-size: 5vw;
+margin-top: -0.8vw;
+}
+
+.group7-1 {
+margin-left: 4vw;
+}
+
+.group-8 {
+border-top: 1.3vw solid rgb(227 230 233);
+border-bottom: 0.5vw solid rgb(245 245 245);
+margin-top: 90vw;
+height: 9vw;
+}
+
+.files1 {
+margin-left: 4vw;
+font-weight: bold;
+margin-top: 1.4vw;
+  font-size: 1.6rem;
+}
+
+.group-9 {
+width: 100vw;
+display: flex;
+}
+
+.group9-1 {
+margin-top: 3vw;
+margin-left: 4vw;
+}
+
+.group9-2 {
+  font-size: 1rem;
+}
+
+.group9-3 {
+font-weight: bold;
+margin-top: 2vw;
+font-size: 4.5vw;
+}
+
+.group9-4 {
+margin-top: 3vw;
+margin-left: 15vw;
+}
+
+.group-10 {
+margin-top: 1vw;
+}
+
 .group10-1 {
-  margin-left: 29vw;
+  margin-left: 25vw;
   margin-top: 3vw;
 }
 
 .group10-2 {
-  margin-left: 24vw;
-  margin-top: 3vw;
+margin-left: 24vw;
+margin-top: 3vw;
 }
 
 .group-11 {
-  border-top: 1.3vw solid rgb(227 230 233);
-  border-bottom: 0.5vw solid rgb(245 245 245);
-  height: 9vw;
-  margin-top: 4vw;
+border-top: 1.3vw solid rgb(227 230 233);
+border-bottom: 0.5vw solid rgb(245 245 245);
+height: 9vw;
+margin-top: 4vw;
 }
 
 .group-12 {
-  display: flex;
-  margin-top: 5vw;
-  margin-left: 4vw;
+display: flex;
+margin-top: 5vw;
+margin-left: 4vw;
 
 }
 
 .group12-1 {
-  margin-top: 0vw;
-  font-size: 3vw;
+margin-top: 0vw;
+font-size: 3vw;
 }
 
 .group12-2 {
   margin-left: 10vw;
   margin-top: 0vw;
-  font-size: 1vw
+  font-size: 1.5rem;
 }
 
 /*底部导航栏防覆盖*/

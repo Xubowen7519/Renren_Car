@@ -1,19 +1,20 @@
 <template>
+  <router-view/>
   <div class="home">
     <!--页面的头部-->
     <div class="top">
       <div class="top_body">
         <div class="search">
-          <input v-model="search_msg" @keyup.enter="toSearch()" type="text" placeholder="搜索车型">
+          <input type="text" placeholder="搜索车型">
         </div>
-        <div @click="toMessage">
+        <div>
           <img class="info" src="../assets/icon/info_icon.png">
         </div>
       </div>
     </div>
     <div @mouseover="overHd" @mouseout="auto">
       <div class="slideshow" v-for="(item,ind) in gallery"
-           v-show="ind===index" @click="skip_car">
+           v-show="ind===index">
         <img :src="item.imgUrl" alt="">
       </div>
       <div class="thumbs">
@@ -34,14 +35,14 @@
     <!--新车，热销，二手-->
     <div class="car_classify">
       <div class="left">
-        <img src="../assets/pages/Home/index/week_update.png" alt="" @click="skip_buy_car">
+        <img src="../assets/pages/Home/index/week_update.png" alt="">
       </div>
       <div class="right">
         <div>
-          <img src="../assets/pages/Home/index/hot_SUV.png" alt="" @click="skip_buy_car">
+          <img src="../assets/pages/Home/index/hot_SUV.png" alt="">
         </div>
         <div>
-          <img src="../assets/pages/Home/index/second_hand.png" alt="" @click="skip_buy_car">
+          <img src="../assets/pages/Home/index/second_hand.png" alt="">
         </div>
       </div>
     </div>
@@ -54,24 +55,30 @@
       </div>
       <hr />
       <div class="hot_car_list">
-        <div class="car_item" v-for="item in car_list" @click='this.$router.push({ name: "cheliangxiangqing" })'>
-          <div class="car_item_left">
-            <img :src="item.imgPath" alt="">
-          </div>
-          <div class="car_item_right">
-            <p class="car_item_right_label"><span v-for="label in item.labels">{{ label }} </span></p>
-            <p class="car_item_right_price">秒杀价：{{ item.price }}万起</p>
-          </div>
+        <div class="car_item_left">
+          <img src="../assets/pages/Home/index/car.png" alt="">
+        </div>
+        <div class="car_item_right">
+          <p>新车 A系列 588km</p>
+        </div>
+      </div>
+      <div class="hot_car_list">
+        <div class="car_item_left">
+          <img src="../assets/pages/Home/index/car.png" alt="">
+        </div>
+        <div class="car_item_right">
+          <p>新车 A系列 588km</p>
+        </div>
+      </div>
+      <div class="hot_car_list">
+        <div class="car_item_left">
+          <img src="../assets/pages/Home/index/car.png" alt="">
+        </div>
+        <div class="car_item_right">
+          <p>新车 A系列 588km</p>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="search_box" v-show="search_url">
-    <div class="box_bars">
-      <button class="box_bar" @click="close_search">关闭</button>
-    </div>
-    <iframe class="iframe_search" :src="search_url" frameborder="0"></iframe>
   </div>
 </template>
 
@@ -82,45 +89,28 @@ export default {
   data() {
     return {
       item_all: [
-        [{ name: "二手车", imgPath: require("../assets/icon/class_icon1.png"), rPath: "second_hand" },
-          { name: "新车", imgPath: require("../assets/icon/class_icon2.png"), rPath: "buy" },
-          { name: "零首付", imgPath: require("../assets/icon/class_icon3.png"), rPath: "buy" },
-          { name: "分期申请", imgPath: require("../assets/icon/class_icon4.png"), rPath: "buy" },
-          { name: "估价", imgPath: require("../assets/icon/class_icon5.png"), rPath: "evaluate" }],
-        [{ name: "顺风车", imgPath: require("../assets/icon/class_icon6.png"), rPath: "hitch_ride" },
+        [{ name: "二手车", imgPath: require("../assets/icon/金刚区图标-01.png"), rPath: "second_hand" },
+          { name: "新车", imgPath: require("../assets/icon/金刚区图标-02.png"), rPath: "" },
+          { name: "零首付", imgPath: require("../assets/icon/金刚区图标-03.png"), rPath: "" },
+          { name: "分期申请", imgPath: require("../assets/icon/金刚区图标-04.png"), rPath: "" },
+          { name: "估价", imgPath: require("../assets/icon/金刚区图标-05.png"), rPath: "" }],
+        [{ name: "顺风车", imgPath: require("../assets/icon/金刚区图标-06.png"), rPath: "hitch_ride" },
           // 报价卖车
-          { name: "热销排行", imgPath: require("../assets/icon/class_icon7.png"), rPath: "buy" },
-          { name: "降价急售", imgPath: require("../assets/icon/class_icon8.png"), rPath: "buy" },
-          { name: "汽车百科", imgPath: require("../assets/icon/class_icon9.png"), rPath: "buy" },
-          { name: "汽车养护", imgPath: require("../assets/icon/class_icon10.png"), rPath: "buy" }]],
+          { name: "热销排行", imgPath: require("../assets/icon/金刚区图标-07.png"), rPath: "" },
+          { name: "降价急售", imgPath: require("../assets/icon/金刚区图标-08.png"), rPath: "" },
+          { name: "汽车百科", imgPath: require("../assets/icon/金刚区图标-09.png"), rPath: "" },
+          { name: "汽车养护", imgPath: require("../assets/icon/金刚区图标-10.png"), rPath: "" }]],
       gallery: [
         {
           imgUrl: require("../assets/pages/Home/index/slideshow1.jpg")
         }, {
-          imgUrl: require("../assets/pages/Home/index/slideshow2.jpg")
+          imgUrl: require("../assets/pages/Home/index/tu1.png")
         }, {
-          imgUrl: require("../assets/pages/Home/index/slideshow3.jpg")
-        }
-      ],
-      car_list: [
-        {
-          imgPath: require("../assets/pages/Home/index/car.png"),
-          labels: ["新车", "A系列", "588km"],
-          price: "23"
-        }, {
-          imgPath: require("../assets/pages/Home/index/car.png"),
-          labels: ["新车", "A系列", "588km"],
-          price: "66"
-        }, {
-          imgPath: require("../assets/pages/Home/index/car.png"),
-          labels: ["新车", "A系列", "588km"],
-          price: "45"
+          imgUrl: require("../assets/pages/Home/index/tu2.png")
         }
       ],
       index: 0,
-      stopID: null,
-      search_msg: "",
-      search_url: ""
+      stopID: null
     };
   },
   created() {
@@ -137,33 +127,13 @@ export default {
     },
     overHd() {
       clearInterval(this.stopID);
+
     },
     //检查边界
     check() {
       if (this.index === this.gallery.length) {
         this.index = 0;
       }
-    },
-    // 跳转到车辆详情
-    skip_car() {
-      this.$router.push({ name: "cheliangxiangqing" });
-    },
-    // 跳转到卖车页面
-    skip_buy_car() {
-      this.$store.state.select_icon = 1;
-      this.$router.push({ name: "buy" });
-    },
-    // 搜索
-    toSearch() {
-      this.search_url = "https://cn.bing.com/search?q=" + this.search_msg;
-    },
-    // 关闭搜索
-    close_search(){
-      this.search_url=""
-    },
-    // 跳转消息
-    toMessage(){
-      this.$router.push({ name: "dialogue" });
     }
   }
 };
@@ -195,6 +165,7 @@ export default {
   width: 83.4667vw;
   height: 9.2vw;
   border-radius: 2.6667vw;
+  font-size: 1.6rem;
 }
 
 /*通知图标*/
@@ -212,11 +183,10 @@ export default {
   display: flex;
   justify-content: center;
 }
-
 .slideshow img {
   height: 40.2667vw;
   border-radius: 2.6667vw;
-  margin: 0 auto;
+  margin:0 auto;
 }
 
 /*轮播图下方栏*/
@@ -232,7 +202,6 @@ export default {
   height: 1.3333vw;
   display: inline-block;
   border-radius: 2vw;
-  border: 0.1vw solid black;
   margin: 0 0.6667vw;
   background-color: #fff;
 }
@@ -264,6 +233,8 @@ export default {
   display: flex;
   flex-direction: column;
   float: left;
+  width: 20vw;
+  height: 15vw;
 }
 
 /*分类标签字体*/
@@ -271,24 +242,26 @@ export default {
   height: 3.0667vw;
   font-size: 3.2vw;
   line-height: 6.5333vw;
+  margin-top: -4vw;
 }
 
 /*分类标签图*/
 .classify div div img {
-  width: 10.6667vw;
-  height: 9.6vw;
+  /*width: 10.6667vw;*/
+  /*height: 9.6vw;*/
   /*水平居中*/
   margin: 0 auto;
   /*垂直居中*/
   display: inline-block;
   vertical-align: middle;
+  /*transform:scale(0.5);*/
 }
 
 
 /*车分类*/
 .car_classify {
   display: flex;
-  justify-content: center;
+  justify-content: center
 }
 
 /*车分类图样式*/
@@ -349,15 +322,11 @@ export default {
 /*车辆列表*/
 .hot_car .hot_car_list {
   margin-top: 2.8vw;
-}
-
-.car_item {
   display: flex;
-  margin-bottom: 2.8vw;
 }
 
 /*列表 车辆图片*/
-.car_item_left img {
+.hot_car .hot_car_list .car_item_left img {
   width: 32.5333vw;
   height: 15.8667vw;
   border-radius: 2.6667vw;
@@ -365,76 +334,20 @@ export default {
 }
 
 /*列表 车辆文本*/
-.car_item_right p {
+.hot_car .hot_car_list .car_item_right p {
+  width: 32.8vw;
+  height: 5.6vw;
+  font-size: 3.7333vw;
+  font-weight: normal;
+  color: #272727;
   line-height: 6.5333vw;
   margin-left: 2.8vw;
-  margin-bottom: 2.6vw;
 }
-
-.car_item_right_label {
-  height: 5.6vw;
-  color: #272727;
-  font-size: 3.7333vw;
-}
-
-.car_item_right span {
-  margin-right: 1.2vw;
-}
-
-.car_item_right_price {
-  color: rgba(255, 42, 57, 1);
-  font-size: 4vw;
-}
-
-/*搜索页面样式*/
-/*操作条*/
-.box_bars{
-  background: #04BEFE;
-  border-radius: 2.6667vw;
-  margin-bottom: 0.6667vw;
-}
-.box_bar {
-  border: 0.2667vw solid #2980b9;
-  color: #2980b9;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  margin: 0.6667vw;
-
-  width: 8.6667vw;
-  height: 6vw;
-  border-radius: 1.6667vw;
-}
-
-.box_bar::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 0;
-  height: 100%;
-  left: 0;
-  background-color: #2980b9;
-  transition: ease-in-out .5s;
-}
-
-.box_bar:hover::before {
-  width: 100%;
-}
-
-/*内容*/
-.search_box {
-  width: 100%;
-  padding: 0.6667vw;
-  background: #88C5F0;
-
-  position: absolute;
-  top: 18vw;
-  border: 0.6667vw solid black;
-  border-radius: 2.6667vw;
-}
-
-.iframe_search {
-  height: 133.3333vw;
-  width: 100%;
+.separate{
+  height: 0.0667vw;
+  border: 0.2667vw solid #E5E5E5;
+  /* opacity: 0.8; */
+  margin-top: 4.6667vw;
+  margin-bottom: 3.6667vw;
 }
 </style>

@@ -299,6 +299,7 @@ body {
   display: flex;
   margin-left: 18vw;
   font-size: 1rem;
+  transform: scale(1.8);
 }
 
 .group2-7 {
@@ -440,7 +441,7 @@ body {
   height: 16vw;
   display: flex;
   align-items: center;
-  margin-left: 33vw;
+  margin-left: 38vw;
   margin-top: -19vw;
   border-bottom: 0.2vw solid #e5e5e5;
 }
@@ -471,8 +472,8 @@ body {
 }
 
 .group5 {
-  margin-top:11vw;
-  margin-left: 4vw;
+  margin-top: 11vw;
+  margin-left: 8vw;
   display: flex;
 
 }
@@ -492,7 +493,7 @@ body {
 
 .group4-9 {
   display: flex;
-  margin-left: 34vw;
+  margin-left: 39vw;
 }
 
 .group4-10 {
