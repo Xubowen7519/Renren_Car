@@ -254,7 +254,7 @@ export default {
   /*垂直居中*/
   display: inline-block;
   vertical-align: middle;
-  /*transform:scale(0.5);*/
+  transform:scale(0.5);
 }
 
 
